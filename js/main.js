@@ -87,7 +87,7 @@ async function requestKanyeQuote() {
     }
 }
 
-async function requestAffirmation() {
+async function requestDadJoke() {
     const url = 'https://icanhazdadjoke.com/';
     try {
         const response = await fetch(url, {
@@ -150,7 +150,7 @@ function main() {
     requestRandomActivity();
     // requestRandomNumberFact();
     requestKanyeQuote();
-    requestAffirmation();
+    requestDadJoke();
     requestGame();
 }
 
