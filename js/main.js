@@ -127,13 +127,13 @@ async function requestGame() {
 function setText(value, selector) {
     let textField = document.querySelector(selector);
     textField.innerHTML = value;
-    console.log(textField.innerHTML);
+    // console.log(textField.innerHTML);
 }
 
 function setPicture(url, selector) {
     let imageField = document.querySelector(selector);
     imageField.src = url;
-    console.log(imageField.src);
+    // console.log(imageField.src);
 }
 
 function randomInt(max) {
