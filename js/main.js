@@ -96,7 +96,6 @@ async function requestDadJoke() {
             },
         });
         const data = await response.json();
-        console.log(data);
         if (data.status === 200) {
             setText(data.joke, '#dadJoke');
         } else {
