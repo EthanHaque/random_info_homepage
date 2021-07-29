@@ -143,7 +143,7 @@ function main() {
     requestFirstDogPicture();
     requestRandomImage();
     requestRandomActivity();
-    requestRandomNumberFact();
+    // requestRandomNumberFact();
     requestKanyeQuote();
     requestAffirmation();
     requestGame();
