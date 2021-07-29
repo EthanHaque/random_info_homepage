@@ -88,14 +88,19 @@ async function requestKanyeQuote() {
 }
 
 async function requestAffirmation() {
-    const url = 'https://affirmations-dev.herokuapp.com/';
+    const url = 'https://icanhazdadjoke.com/';
     try {
-        const response = await fetch(url);
+        const response = await fetch(url, {
+            headers: {
+                Accept: 'application/json'
+            },
+        });
         const data = await response.json();
-        if (data.affirmation) {
-            setText(data.affirmation, '#affirmation');
+        console.log(data);
+        if (data.status === 200) {
+            setText(data.joke, '#dadJoke');
         } else {
-            throw new Error('Could not fetch affirmation text.');
+            throw new Error('Could not fetch dadJoke text.');
         }
     } catch (error) {
         console.log(error);
